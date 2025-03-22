@@ -42,8 +42,11 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-
-SESSION_ID: process.env.SESSION_ID === undefined ? 'Nj2T5cv6ZkXmu7E4DhwwvQjayuefzs18vFsM' : process.env.SESSION_ID,
+    SESSION_ID:Manu-MD&dCUzQZjb#Nr-U8uz5BqjQIDLsio9EpO-avGjNOWUifnOeADfOkys process.env.SESSION_ID || 'Manu-MD&hPVxATwB#8RjSQXmqNSHTC_qMo3wfpc4aU0xQmzxEPx27xZrS7WI',
+    GITHUB_USERNAME: process.env.GITHUB_USERNAME || 'thaddeus-tech/Manu-XMD',
+    GITHUB_AUTH_TOKEN : process.env.GITHUB_AUTH_TOKEN || '4Au6FwBxZPaY2iGc3Ky1V4yd9qh2Hb4CZfo1',
+    getSessionDetails: () => {
+        return `Session ID: ${process.env.SESSION_ID}`;
 PREFIX: process.env.PREFIX || '.' ,
 PORT: process.env.PORT === undefined ? "8000" : process.env.PORT,
 SUDO: process.env.SUDO === undefined ? '254740075968' : process.env.SUDO,
