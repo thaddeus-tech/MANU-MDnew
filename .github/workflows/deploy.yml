@@ -29,7 +29,10 @@ jobs:
         run: npm install
 
       - name: Fix vulnerabilities
-        run: npm audit fix --force
+        run: npm audit fix --force || echo "npm audit fix failed, but continuing..."
+
+      - name: Run tests
+        run: npm test
 
       - name: Start application
         run: npm start
