@@ -42,7 +42,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-    SESSION_ID:Manu-MD&dCUzQZjb#Nr-U8uz5BqjQIDLsio9EpO-avGjNOWUifnOeADfOkys process.env.SESSION_ID || 'Manu-MD&hPVxATwB#8RjSQXmqNSHTC_qMo3wfpc4aU0xQmzxEPx27xZrS7WI',
+    SESSION_ID:process.env.SESSION_ID || 'Manu-MD&hPVxATwB#8RjSQXmqNSHTC_qMo3wfpc4aU0xQmzxEPx27xZrS7WI',
     GITHUB_USERNAME: process.env.GITHUB_USERNAME || 'thaddeus-tech/Manu-XMD',
     GITHUB_AUTH_TOKEN : process.env.GITHUB_AUTH_TOKEN || '4Au6FwBxZPaY2iGc3Ky1V4yd9qh2Hb4CZfo1',
     getSessionDetails: () => {
@@ -69,5 +69,5 @@ AUTO_BIO: process.env.AUTO_BIO === undefined ? 'true' : process.env.AUTO_BIO,
 ANTI_STICKER: process.env.ANTI_STICKER === undefined ? 'false' : process.env.ANTI_STICKER,
 ANTI_PHOTO: process.env.ANTI_PHOTO === undefined ? 'false' : process.env.ANTI_PHOTO,
 MOROCCO_BLOCK: process.env.MOROCCO_BLOCK === undefined ? 'false' : process.env.MOROCCO_BLOCK,
-POSTGRESQL_URL: process.env.POSTGRESQL_URL === undefined ? 'Manu-MD&dCUzQZjb#Nr-U8uz5BqjQIDLsio9EpO-avGjNOWUifnOeADfOkys' : process.env.POSTGRESQL_URL,
+POSTGRESQL_URL: process.env.POSTGRESQL_URL === undefined ? 'Manu-MD&hPVxATwB#8RjSQXmqNSHTC_qMo3wfpc4aU0xQmzxEPx27xZrS7WI' : process.env.POSTGRESQL_URL,
 };
