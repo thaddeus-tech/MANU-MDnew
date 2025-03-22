@@ -28,5 +28,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Fix vulnerabilities
+        run: npm audit fix --force
+
       - name: Start application
         run: npm start
